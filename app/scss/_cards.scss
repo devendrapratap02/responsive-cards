@@ -1,0 +1,72 @@
+.cards{
+
+    &__grid {
+
+        @include breakpoint-up(medium) {
+            @include flexbox();
+            justify-content: center;
+            gap: 2rem;
+        }
+    }
+
+    &__item {
+        position: relative;
+        padding: rem(15px);
+        text-align: center;
+
+        width: rem(400px);
+        height: rem(200px);
+
+        border-radius: rem(5px);
+
+        box-shadow: 5px 5px 5px rgba($color: #000000, $alpha: 0.5);
+
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center top;
+        transition: all 0.25s ease-in-out;
+
+        &:hover {
+            background-position: -160px top;
+
+            .item_options {
+                scale: 1;
+                opacity: 1;
+            }
+        }
+
+        .item-title {
+            position: absolute;
+            bottom: rem(15px);
+            padding: rem(10px);
+
+            background-color: $draculaDark;
+            text-transform: capitalize;
+            color: $whiteLight;
+            border-radius: rem(2px);
+        }
+
+        .item_options {
+            position: absolute;
+            bottom: rem(0px);
+            right: rem(0px);
+            top: rem(0px);
+            background-color: $draculaDark;
+            padding: rem(10px);
+            opacity: 0;
+            scale: 0;
+            width: rem(160px);
+            transition: all 0.25s ease-in-out;
+
+            border-radius: 0px rem(5px) rem(5px) 0;
+
+            display: flex;
+            flex-direction: column;
+
+            a {
+                color: $whiteLight;
+                margin: auto;
+            }
+        }
+    }
+}

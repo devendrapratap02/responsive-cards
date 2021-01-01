@@ -5,6 +5,7 @@ const postcss =  require("gulp-postcss");
 const cssnano = require("cssnano");
 const terser = require("gulp-terser");
 const del = require("del");
+var log = require('fancy-log');
 const browersync = require("browser-sync").create();
 
 const HOME_DIR = require('os').homedir();
@@ -13,6 +14,7 @@ const BASE_DIR = "app";
 const BUILD_DIR = "build";
 
 const clear = (callback) => {
+    log("Cleaning build directory..");
     del.sync([BUILD_DIR]);
 
     callback();

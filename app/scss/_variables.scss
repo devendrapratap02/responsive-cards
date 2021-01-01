@@ -1,11 +1,16 @@
 // Colors
-$darkBlue: hsl(233, 26%, 24%);
-$limeGreen: hsl(136, 65%, 51%);
-$brightCyan: hsl(192, 70%, 51%);
-$grayishBlue: hsl(233, 8%, 62%);
-$lightGrayishBlue: hsl(220, 16%, 96%);
-$veryLightGrey: hsl(0, 0%, 98%);
-$white: hsl(0, 0%, 100%);
+$black: #000000;
+$white: #ffffff;
+$whiteSomething: #f5f6fa;
+$whiteLight: #dfe6e9;
+$greyWhite: #dcdde1;
+$draculaDark: #2d3436;
+$blue: #2980b9;
+$darkBlue: #2c3e50;
+$prestigeBlue: #2f3542;
+$red: #c0392b;
+$desireRed: #eb3b5a;
+$teal: #4e9789;
 
 // Font Sizes
 $font-sm: 0.875rem;
@@ -13,6 +18,7 @@ $font-md: 1.125rem;
 $font-lg: 1.25rem;
 $font-xlg: 3.25rem;
 
+// Methods
 @function rem($size) {
     @return $size / 16px * 1rem;
 }

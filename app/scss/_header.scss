@@ -1,0 +1,12 @@
+.header {
+    background: $desireRed;
+    background: linear-gradient(45deg, rgba($desireRed,0.8) 10%, rgba($blue,1) 70%, rgba($red,1) 100%);
+
+    nav {
+        gap: 1rem;
+
+        img {
+            width: rem(36px);
+        }
+    }
+}
