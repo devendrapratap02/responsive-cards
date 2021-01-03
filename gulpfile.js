@@ -55,7 +55,7 @@ const server = (callback) =>  {
             key: `${HOME_DIR}/.ssl/server.key`
         },
         port: 8000,
-        browser: "/Applications/Firefox\ Developer\ Edition.app/Contents/MacOS/firefox",
+        browser: "firefox",
         plugins: [],
         ui: {
             port: 8080
