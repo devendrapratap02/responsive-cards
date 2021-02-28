@@ -58,7 +58,7 @@ const server = (callback) => {
 		host: get(config, "server.host", "localhost"),
 		https: get(config, "server.https", false),
 		port: get(config, "server.port", 8000),
-		browser: get(config, "others.browser", "firefox"),
+		browser: get(config, "browser", "firefox"),
 		plugins: [],
 		ui: get(config, "server.ui", false)
 	});
